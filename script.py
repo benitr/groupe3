@@ -14,6 +14,7 @@ import operator
 
 # Initialisation des variables
 dico_dns_ns = {}
+dico_geoip_country = {}
 
 # Initialisation des fonctions
 def dictionnaire(dico, colonne):
@@ -24,9 +25,10 @@ def dictionnaire(dico, colonne):
     return dico
 
 def trie(dico):
+     del dico[""]
      dico_trie = sorted(dico.iteritems(), reverse=True, key=operator.itemgetter(1))
      return dico_trie
- 
+
 print "Script python realise par BENIT Romain"
 
 filename = 'fichiertest.csv'
@@ -46,12 +48,20 @@ with open(filename) as f:
 
             # Utilisation des disctionnaires pour les listes finales
 	    dictionnaire(dico_dns_ns, dns_ns)
-    
+	    dictionnaire(dico_geoip_country, geoip_country)    
+
     except csv.Error as e:
         sys.exit('file {}, line {}: {}'.format(filename, reader.line_num, e))
 
 # Affichage des donnees extraites
+print ""
+print "*** DNS_NS ***"
 for cle,valeur in trie(dico_dns_ns):
+     print cle,valeur
+
+print ""
+print "*** GEOIP_COUNTRY ***"
+for cle,valeur in trie(dico_geoip_country):
      print cle,valeur
 
 # Traitement des donnees pour le graphique
