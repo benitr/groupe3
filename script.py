@@ -12,6 +12,7 @@ import csv, sys
 from pylab import *
 from matplotlib import pyplot
 import operator
+import os
 
 # Initialisation des variables
 dico_dns_ns = {}
@@ -38,18 +39,24 @@ def trie(dico):
      dico_trie = sorted(dico.iteritems(), reverse=True, key=operator.itemgetter(1))
      return dico_trie
 
-print "Script python realise par BENIT Romain"
-# print ""
-# print "Entrer vos choix :"
-# print "1 : URL du site"
-# print "2 : Nom de domaine"
-#
-# a = raw_input('Entrez une donnée : ')
-#
-# print a
+print "Script python realise par le groupe 3"
+print "BENIT Romain"
+print "MALLET Maxime"
+print "SAOULI Mohamed"
+print "FERAFIAT Lionel"
+print "###############"
+print ""
 
+# Gestion du nombre d'arguments
+if len(sys.argv) < 2 :
+    print "Erreur, il n'y a pas le bon nombre d'arguments"
+    exit()
 
-filename = 'fichiertest.csv'
+# Gestion du nom de fichier entré  en argument
+filename = sys.argv[1]
+if not os.path.isfile(filename):
+    print "Erreur, ce n'est pas un fichier"
+    exit()
 
 with open(filename) as f:
 	reader = csv.reader(f)
