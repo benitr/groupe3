@@ -39,6 +39,13 @@ def trie(dico):
      dico_trie = sorted(dico.iteritems(), reverse=True, key=operator.itemgetter(1))
      return dico_trie
 
+def make_autopct(values):
+    def my_autopct(pct):
+        total = sum(values)
+        val = int(round(pct*total/100.0))
+        return '{p:.2f}%  ({v:d})'.format(p=pct,v=val)
+    return my_autopct
+
 print "Script python realise par le groupe 3"
 print "BENIT Romain"
 print "MALLET Maxime"
@@ -56,6 +63,10 @@ if len(sys.argv) < 2 :
 filename = sys.argv[1]
 if not os.path.isfile(filename):
     print "Erreur, ce n'est pas un fichier"
+    exit()
+
+if not os.path.splitext(filename)[1] == ".csv":
+    print "Erreur, ce n'est pas un fichier CSV"
     exit()
 
 with open(filename) as f:
@@ -89,14 +100,14 @@ for cle,valeur in trie(dico_dns_ns):
     		cpt = int(valeur)+cpt
     	i = i+1
     	print cle,valeur
-name_dns_ns.append("Autres")
-data_dns_ns.append(cpt)
+if cpt > 0:
+    name_dns_ns.append("Autres")
+    data_dns_ns.append(cpt)
 cpt=0
 i=0
 
 print ""
 print "*** GEOIP_COUNTRY ***"
-
 for cle,valeur in trie(dico_geoip_country):
 	if i < 5:
 		name_geoip_country.append(cle)
@@ -105,19 +116,20 @@ for cle,valeur in trie(dico_geoip_country):
 		cpt = int(valeur)+cpt
 	i = i+1
 	print cle,valeur
-name_geoip_country.append("Autres")
-data_geoip_country.append(cpt)
+if cpt > 0:
+    name_geoip_country.append("Autres")
+    data_geoip_country.append(cpt)
 
 # Traitement des donnees pour le graphique
 
 pyplot.figure(1)
 pyplot.subplot(1, 3, 1)
 plt.title("DNS NS")
-plt.pie(data_dns_ns, labels=name_dns_ns, autopct='%1.1f%%',startangle=90, shadow=True)
+plt.pie(data_dns_ns, labels=name_dns_ns, autopct=make_autopct(data_dns_ns), startangle=90, shadow=True)
 plt.axis('equal')
 pyplot.subplot(1, 3, 3)
 plt.title("GEOIP COUNTRY")
-plt.pie(data_geoip_country, labels=name_geoip_country, autopct='%1.1f%%',startangle=90, shadow=True)
+plt.pie(data_geoip_country, labels=name_geoip_country, autopct=make_autopct(data_dns_ns),startangle=90, shadow=True)
 plt.axis('equal')
 
 plt.show()
