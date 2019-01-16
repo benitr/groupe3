@@ -28,8 +28,14 @@ cpt = 0
 
 # Initialisation des fonctions
 def dictionnaire(dico, colonne):
-    if dico.has_key(colonne):
+    if dico.has_key(colonne) :
         dico[colonne] = int(dico.get(colonne))+1
+    elif colonne == "geoip-country" :
+        # on fait rien
+        a = 0
+    elif colonne == "dns-ns" :
+        # on fait rien
+        b = 0
     else :
         dico[colonne] = 1
     return dico
@@ -119,6 +125,9 @@ for cle,valeur in trie(dico_geoip_country):
 if cpt > 0:
     name_geoip_country.append("Autres")
     data_geoip_country.append(cpt)
+
+print dico_dns_ns
+print dico_geoip_country
 
 # Traitement des donnees pour le graphique
 
