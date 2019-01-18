@@ -28,7 +28,9 @@ cpt = 0
 
 # Liste des nom de domain de parking
 # Source : https://www.securitee.org/files/parking-sensors_ndss2015.pdf
-parking_domain = ["sedoparking.com", "internettraffic.com", "cashparking.com", "fabulous.com", "dsredirection.com", "above.com", "parkingcrew.net", "ztomy.com", "fastpark.net", "voodoo.com", "rookdns.com", "bodis.com", "domainapps.com", "trafficz.com", "pql.net" ]
+# parking_domain = ["sedoparking.com", "internettraffic.com", "cashparking.com", "fabulous.com", "dsredirection.com", "above.com", "parkingcrew.net", "ztomy.com", "fastpark.net", "voodoo.com", "rookdns.com", "bodis.com", "domainapps.com", "trafficz.com", "pql.net", "domaincontrol.com" ]
+parking_domain = []
+parking_domain_found = []
 
 # Initialisation des fonctions
 def dictionnaire(dico, colonne):
@@ -56,6 +58,12 @@ def make_autopct(values):
         return '{p:.2f}%  ({v:d})'.format(p=pct,v=val)
     return my_autopct
 
+def parking(park_list, dico):
+    for parking in park_list:
+        for dic in dico:
+            if parking in dic:
+                parking_domain_found.append(dic)
+
 print "Script python realise par le groupe 3"
 print "BENIT Romain"
 print "MALLET Maxime"
@@ -65,20 +73,39 @@ print "###############"
 print ""
 
 # Gestion du nombre d'arguments
-if len(sys.argv) < 2 :
+if len(sys.argv) < 3 :
     print "Erreur, il n'y a pas le bon nombre d'arguments"
+    print "Utilisation : ./script.py 'FICHIER.CSV' 'LISTEDOMAINS.TXT'"
     exit()
 
-# Gestion du nom de fichier entré  en argument
+# Gestion des arguments
 filename = sys.argv[1]
+fichier = sys.argv[2]
+
 if not os.path.isfile(filename):
-    print "Erreur, ce n'est pas un fichier"
+    print "Erreur,'"+filename+"' n'est pas un fichier"
     exit()
 
 if not os.path.splitext(filename)[1] == ".csv":
-    print "Erreur, ce n'est pas un fichier CSV"
+    print "Erreur, '"+fichier+"' n'est pas un fichier CSV"
     exit()
 
+if not os.path.isfile(fichier):
+    print "Erreur, '"+fichier+"' n'est pas un fichier"
+    exit()
+
+if not os.path.splitext(fichier)[1] == ".txt":
+    print "Erreur, '"+fichier+"' n'est pas un fichier TXT"
+    exit()
+
+# Lecture du fichier contenant les domain
+with open(fichier, "r") as fichier:
+    fichier_entier = fichier.read()
+    parking_domain = fichier_entier.split("\n")
+    parking_domain.remove("")
+# print parking_domain
+
+# Lecture du fichier CSV
 with open(filename) as f:
 	reader = csv.reader(f)
 	try:
@@ -130,8 +157,16 @@ if cpt > 0:
     name_geoip_country.append("Autres")
     data_geoip_country.append(cpt)
 
-print dico_dns_ns
-print dico_geoip_country
+# print dico_dns_ns
+# print dico_geoip_country
+
+# Gestion des domains parking
+
+parking(parking_domain,dico_dns_ns)
+print ""
+print "*** Liste des domains parking ***"
+for park in parking_domain_found:
+    print park
 
 # Traitement des donnees pour le graphique
 
