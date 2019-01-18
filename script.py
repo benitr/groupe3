@@ -26,6 +26,10 @@ data_geoip_country = []
 i = 0
 cpt = 0
 
+# Liste des nom de domain de parking
+# Source : https://www.securitee.org/files/parking-sensors_ndss2015.pdf
+parking_domain = ["sedoparking.com", "internettraffic.com", "cashparking.com", "fabulous.com", "dsredirection.com", "above.com", "parkingcrew.net", "ztomy.com", "fastpark.net", "voodoo.com", "rookdns.com", "bodis.com", "domainapps.com", "trafficz.com", "pql.net" ]
+
 # Initialisation des fonctions
 def dictionnaire(dico, colonne):
     if dico.has_key(colonne) :
@@ -137,6 +141,7 @@ plt.title("DNS NS")
 plt.pie(data_dns_ns, labels=name_dns_ns, autopct=make_autopct(data_dns_ns), startangle=90, shadow=True)
 plt.axis('equal')
 pyplot.subplot(1, 3, 3)
+
 plt.title("GEOIP COUNTRY")
 plt.pie(data_geoip_country, labels=name_geoip_country, autopct=make_autopct(data_dns_ns),startangle=90, shadow=True)
 plt.axis('equal')
