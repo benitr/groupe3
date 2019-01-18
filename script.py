@@ -73,21 +73,20 @@ print "###############"
 print ""
 
 # Gestion du nombre d'arguments
-if len(sys.argv) < 3 :
+if len(sys.argv) < 2 :
     print "Erreur, il n'y a pas le bon nombre d'arguments"
-    print "Utilisation : ./script.py 'FICHIER.CSV' 'LISTEDOMAINS.TXT'"
+    print "Utilisation : ./script.py 'FICHIER.CSV'"
     exit()
 
 # Gestion des arguments
 filename = sys.argv[1]
-fichier = sys.argv[2]
-
+fichier = "ParkingDomains.txt"
 if not os.path.isfile(filename):
     print "Erreur,'"+filename+"' n'est pas un fichier"
     exit()
 
 if not os.path.splitext(filename)[1] == ".csv":
-    print "Erreur, '"+fichier+"' n'est pas un fichier CSV"
+    print "Erreur, '"+filename+"' n'est pas un fichier CSV"
     exit()
 
 if not os.path.isfile(fichier):
@@ -180,5 +179,7 @@ pyplot.subplot(1, 3, 3)
 plt.title("GEOIP COUNTRY")
 plt.pie(data_geoip_country, labels=name_geoip_country, autopct=make_autopct(data_dns_ns),startangle=90, shadow=True)
 plt.axis('equal')
+
+plt.savefig('Test.png')
 
 plt.show()
