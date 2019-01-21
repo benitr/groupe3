@@ -109,9 +109,9 @@ if not os.path.splitext(fichier)[1] == ".txt":
     print "Erreur, '"+fichier+"' n'est pas un fichier TXT"
     exit()
 
-if "--godaddy" in sys.argv:
-    print sys.argv.index("--godaddy")+1
-    print "Bravo"
+#if "--godaddy" in sys.argv:
+#    print sys.argv.index("--godaddy")+1
+#    print "Bravo"
 
 # Lecture du fichier contenant les domain
 with open(fichier, "r") as fichier:
@@ -142,7 +142,8 @@ with open(filename) as f:
 				dictionnaire(dico_geoip_country, geoip_country)
 
             	# Remplissage des listes pour les domaines disponibles
-				# godaddy(domain_name)
+				if "--godaddy" in sys.argv:
+					godaddy(domain_name)
 
 	except csv.Error as e:
 		sys.exit('file {}, line {}: {}'.format(filename, reader.line_num, e))
@@ -188,17 +189,38 @@ if cpt > 0:
 # Gestion des domains parking
 parking(parking_domain,dico_dns_ns)
 print ""
-print "*** Liste des domains parking ***"
-output_file.write("\n*** Liste des domains parking ***\n")
+print "*** Liste des domaines parking ***"
+output_file.write("\n*** Liste des domaines parking ***\n")
 for park in parking_domain_found:
     print park
     output_file.write(park+"\n")
 
-print domain_dispo
-print len(domain_dispo)
+# Affichage des domaines
+if "--godaddy" in sys.argv:
+	print ""
+	print "*** Liste des domaines disponibles ***"
+	print "Total : "+str(len(domain_dispo))
+	output_file.write("\n*** Liste des domaines disponibles ***\n")
+	output_file.write("Total : "+str(len(domain_dispo))+"\n")
+	for dom_dispo in domain_dispo:
+	    print dom_dispo
+	    output_file.write(dom_dispo+"\n")
 
-print domain_not_dispo
-print len(domain_not_dispo)
+#print domain_dispo
+#print len(domain_dispo)
+
+	print ""
+	print "*** Liste des domaines NON disponibles ***"
+	print "Total : "+str(len(domain_not_dispo))
+	output_file.write("\n*** Liste des domaines NON disponibles ***\n")
+	output_file.write("Total : "+str(len(domain_not_dispo))+"\n")
+	for dom_not_dispo in domain_not_dispo:
+	    print dom_not_dispo
+	    output_file.write(dom_not_dispo+"\n")
+
+
+#print domain_not_dispo
+#print len(domain_not_dispo)
 
 # Fermeture du fichier TXT
 output_file.close()

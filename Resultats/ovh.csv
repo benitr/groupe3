@@ -1,0 +1,242 @@
+fuzzer,domain-name,dns-a,dns-aaaa,dns-mx,dns-ns,geoip-country,whois-created,whois-updated,ssdeep-score
+Original*,ovh.com,198.27.92.1,,mx1.ovh.net,dns.ovh.net,Canada,,,100
+Addition,ovha.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Addition,ovhb.com,91.195.240.230,,mail-gateway.domcollect.com,a.ns36.de,Germany,,,0
+Addition,ovhc.com,141.8.225.68,,,,Switzerland,,,0
+Addition,ovhd.com,12.144.179.226,,ovhd.com.mx1.rcimx.com,ns95.worldnic.com,United States,,,
+Addition,ovhe.com,72.52.4.119,,localhost,ns1.sedoparking.com,United States,,,0
+Addition,ovhf.com,184.168.221.104,,,ns1.afternic.com,United States,,,0
+Addition,ovhg.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Addition,ovhh.com,199.59.242.151,,mx76.m2bp.com,ns1.bodis.com,United States,,,0
+Addition,ovhi.com,184.168.131.241,,mailstore1.secureserver.net,ns65.domaincontrol.com,United States,,,
+Addition,ovhj.com,23.20.239.12,,,ns1.namebrightdns.com,United States,,,0
+Addition,ovhk.com,185.35.184.12,,mx1.pub.mailpod7-cph3.one.com,ns01.one.com,Norway,,,0
+Addition,ovhl.com,185.87.187.243,2a00:f10:305:0:1c00:63ff:fe00:52b,mail.ovhl.com,christina.neostrada.nl,Netherlands,,,0
+Addition,ovhm.com,,,,,,,,
+Addition,ovhn.com,159.8.40.54,,mail.efty.com,ns1.eftydns.com,Netherlands,,,0
+Addition,ovho.com,45.56.111.241,,mx236.m1bp.com,,United States,,,0
+Addition,ovhp.com,184.168.221.104,,,ns1.afternic.com,United States,,,0
+Addition,ovhq.com,170.178.178.38,,,,United States,,,
+Addition,ovhr.com,162.241.241.211,,ovhr.com,ns1.ovhr.com,United States,,,0
+Addition,ovhs.com,184.168.131.241,,,ns65.domaincontrol.com,United States,,,0
+Addition,ovht.com,184.168.221.104,,,ns1.afternic.com,United States,,,0
+Addition,ovhu.com,207.174.213.34,,,toglodo.earth.orderbox-dns.com,United States,,,0
+Addition,ovhv.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Addition,ovhw.com,184.168.131.241,,mailstore1.secureserver.net,ns45.domaincontrol.com,United States,,,0
+Addition,ovhx.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Addition,ovhy.com,103.224.182.238,,park-mx.above.com,ns1.above.com,Australia,,,0
+Addition,ovhz.com,199.59.242.151,,mx76.m2bp.com,ns1.bodis.com,United States,,,0
+Bitsquatting,nvh.com,75.126.102.238,,,ns1bqx.name.com,United States,,,0
+Bitsquatting,mvh.com,208.186.132.20,,x00.i.ismtp.integra.net,,United States,,,0
+Bitsquatting,kvh.com,52.54.81.96,,us-smtp-inbound-1.mimecast.com,ns1.p28.dynect.net,United States,,,0
+Bitsquatting,gvh.com,,,,,,,,
+Bitsquatting,owh.com,65.118.254.197,,gw4206.fortimail.com,pdns03.domaincontrol.com,United States,,,0
+Bitsquatting,oth.com,75.126.102.254,,,ns1bqx.name.com,United States,,,0
+Bitsquatting,orh.com,75.126.101.240,,,ns1bqx.name.com,United States,,,0
+Bitsquatting,ofh.com,103.227.176.14,,ofh.com,ns1.a2hosting.com,Singapore,,,0
+Bitsquatting,o6h.com,,,,,,,,
+Bitsquatting,ovi.com,131.228.17.59,,,ns.nokia.com,United Kingdom,,,
+Bitsquatting,ovj.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Bitsquatting,ovl.com,75.126.102.235,,,ns1bqx.name.com,United States,,,0
+Bitsquatting,ovx.com,199.59.242.151,,mx76.m2bp.com,ns1.bodis.com,United States,,,0
+Homoglyph,xn--v-0ga23w.com,,,,,,,,
+Homoglyph,xn--vh-rub65j.com,,,,,,,,
+Homoglyph,xn--vih-2xd.com,,,,,,,,
+Homoglyph,xn--v-ztb215r.com,,,,,,,,
+Homoglyph,xn--vh-7bb97f.com,,,,,,,,
+Homoglyph,xn--vlh-fna.com,,,,,,,,
+Homoglyph,xn--h-5wb543r.com,,,,,,,,
+Homoglyph,xn--v-rmb214j.com,,,,,,,,
+Homoglyph,xn--v-jcc795q.com,,,,,,,,
+Homoglyph,xn--h-nmb798r.com,,,,,,,,
+Homoglyph,xn--h-sqa43n.com,,,,,,,,
+Homoglyph,xn--h-nmbf.com,,,,,,,,
+Homoglyph,xn--h-uga80y.com,,,,,,,,
+Homoglyph,xn--v-wya216k.com,,,,,,,,
+Homoglyph,xn--h-0ga74s.com,,,,,,,,
+Homoglyph,xn--vih-4ge.com,,,,,,,,
+Homoglyph,xn--v-uga910a.com,,,,,,,,
+Homoglyph,xn--vh-1ya74l.com,,,,,,,,
+Homoglyph,xn--oih-1yc.com,,,,,,,,
+Homoglyph,xn--0v-dmc.com,,,,,,,,
+Homoglyph,xn--ovih-rwc.com,,,,,,,,
+Homoglyph,xn--ovh-7ub.com,,,,,,,,
+Homoglyph,xn--ovi-sdq.com,,,,,,,,
+Homoglyph,xn--o-6wb4s.com,,,,,,,,
+Homoglyph,xn--ovh-3ta.com,,,,,,,,
+Homoglyph,xn--h-rmb06c.com,,,,,,,,
+Homoglyph,xn--vlh-red.com,,,,,,,,
+Homoglyph,xn--vlh-b7a.com,,,,,,,,
+Homoglyph,xn--v-pdc050i.com,,,,,,,,
+Homoglyph,xn--v-0tb09a.com,,,,,,,,
+Homoglyph,xn--vh-rub84e.com,,,,,,,,
+Homoglyph,xn--ovh-gvb.com,,,,,,,,
+Homoglyph,xn--ov-sub642o.com,,,,,,,,
+Homoglyph,xn--ovl-4sd.com,,,,,,,,
+Homoglyph,xn--h-sqa68s.com,,,,,,,,
+Homoglyph,xn--v-rmb41k.com,,,,,,,,
+Homoglyph,xn--ovh-myc.com,,,,,,,,
+Homoglyph,xn--v-ztb22c.com,,,,,,,,
+Homoglyph,xn--vlh-job.com,,,,,,,,
+Homoglyph,xn--v-uga265a.com,,,,,,,,
+Homoglyph,xn--v-wya41w.com,,,,,,,,
+Homoglyph,xn--v-0ga010a.com,,,,,,,,
+Homoglyph,xn--ovlh-rwc.com,,,,,,,,
+Homoglyph,xn--0v-5wc.com,,,,,,,,
+Homoglyph,xn--v-60b431r.com,,,,,,,,
+Homoglyph,xn--v-0biz91e.com,,,,,,,,
+Homoglyph,xn--v-rmb41k.com,,,,,,,,
+Homoglyph,xn--vih-b7a.com,,,,,,,,
+Homoglyph,xn--olh-1yc.com,,,,,,,,
+Homoglyph,xn--vlh-0lz.com,,,,,,,,
+Homoglyph,xn--vlh-rna.com,,,,,,,,
+Homoglyph,xn--vih-job.com,,,,,,,,
+Homoglyph,xn--vh-rub65j.com,,,,,,,,
+Homoglyph,xn--0h-dbc.com,,,,,,,,
+Homoglyph,xn--vh-eka13s.com,,,,,,,,
+Homoglyph,xn--vlh-slz.com,,,,,,,,
+Homoglyph,xn--0vh-9dc.com,,,,,,,,
+Homoglyph,xn--vh-rub46w.com,,,,,,,,
+Homoglyph,ovlh.com,,,,,,,,
+Homoglyph,xn--0v-wcm.com,,,,,,,,
+Homoglyph,xn--v-rmb214j.com,,,,,,,,
+Homoglyph,ovilh.com,,,,,,,,
+Homoglyph,xn--vih-red.com,,,,,,,,
+Homoglyph,xn--v-0tb130j.com,,,,,,,,
+Homoglyph,xn--v-uga065l.com,,,,,,,,
+Homoglyph,xn--v-0tb33g.com,,,,,,,,
+Homoglyph,xn--v-sqa040a.com,,,,,,,,
+Homoglyph,xn--o-ztb1o.com,,,,,,,,
+Homoglyph,xn--v-ztbb.com,,,,,,,,
+Homoglyph,xn--olh-2kd.com,,,,,,,,
+Homoglyph,xn--h-5wb153r.com,,,,,,,,
+Homoglyph,xn--v-jcc5d.com,,,,,,,,
+Homoglyph,ov1h.com,,,,,,,,
+Homoglyph,xn--h-nmb18k.com,,,,,,,,
+Homoglyph,xn--vh-rub065z.com,,,,,,,,
+Homoglyph,xn--vh-rub255z.com,,,,,,,,
+Homoglyph,xn--v-60b4k.com,,,,,,,,
+Homoglyph,xn--vh-4ja34s.com,,,,,,,,
+Homoglyph,xn--vih-8yc.com,,,,,,,,
+Homoglyph,xn--v-sqa830l.com,,,,,,,,
+Homoglyph,0vlh.com,,,,,,,,
+Homoglyph,xn--ovi-tee.com,,,,,,,,
+Homoglyph,xn--ov-sub28v.com,,,,,,,,
+Homoglyph,xn--vh-rub23q.com,,,,,,,,
+Homoglyph,xn--v-sqa79u.com,,,,,,,,
+Homoglyph,xn--ovh-iu2l.com,,,,,,,,
+Homoglyph,xn--ovh-qdb.com,,,,,,,,
+Homoglyph,xn--ovl-sdq.com,,,,,,,,
+Homoglyph,xn--ov-sub85o.com,,,,,,,,
+Homoglyph,xn--v-60b81d.com,,,,,,,,
+Homoglyph,xn--v-0tb130j.com,,,,,,,,
+Homoglyph,xn--o-omb67e.com,,,,,,,,
+Homoglyph,xn--o-6wb568i.com,,,,,,,,
+Homoglyph,xn--vih-red.com,,,,,,,,
+Homoglyph,xn--v-uga14w.com,,,,,,,,
+Homoglyph,xn--ovi-4sd.com,,,,,,,,
+Homoglyph,xn--h-nmbf.com,,,,,,,,
+Homoglyph,xn--v-o3b62b.com,,,,,,,,
+Homoglyph,xn--h-wya80j.com,,,,,,,,
+Homoglyph,xn--h-nmb00b.com,,,,,,,,
+Homoglyph,xn--v-rmb39a.com,,,,,,,,
+Homoglyph,xn--v-jcc195q.com,,,,,,,,
+Homoglyph,xn--0v-odd.com,,,,,,,,
+Homoglyph,xn--ovh-9dca.com,,,,,,,,
+Homoglyph,xn--h-wya06o.com,,,,,,,,
+Homoglyph,xn--v-wya17q.com,,,,,,,,
+Homoglyph,xn--v-0ga355a.com,,,,,,,,
+Homoglyph,xn--ovh-g9p.com,,,,,,,,
+Homoglyph,xn--o-omb91k.com,,,,,,,,
+Homoglyph,xn--v-rmb17e.com,,,,,,,,
+Homoglyph,xn--h-nmb309r.com,,,,,,,,
+Homoglyph,xn--ov-sub45j.com,,,,,,,,
+Homoglyph,xn--v-ztbb.com,,,,,,,,
+Homoglyph,xn--vih-fna.com,,,,,,,,
+Homoglyph,xn--h-0ga99x.com,,,,,,,,
+Homoglyph,xn--v-ztb815r.com,,,,,,,,
+Homoglyph,xn--h-rmb06c.com,,,,,,,,
+Homoglyph,xn--oh-rub14e.com,,,,,,,,
+Homoglyph,xn--ovh-sma.com,,,,,,,,
+Homoglyph,xn--v-sqa91r.com,,,,,,,,
+Homoglyph,xn--h-5wb55a.com,,,,,,,,
+Homoglyph,xn--0h-4qc.com,,,,,,,,
+Homoglyph,xn--h-uga65s.com,,,,,,,,
+Homoglyph,xn--v-o3b425i.com,,,,,,,,
+Homoglyph,xn--vlh-8yc.com,,,,,,,,
+Homoglyph,oviih.com,,,,,,,,
+Homoglyph,xn--ovl-qed.com,,,,,,,,
+Homoglyph,xn--v-0tb33g.com,,,,,,,,
+Homoglyph,xn--o-6wb76e.com,,,,,,,,
+Homoglyph,xn--h-nmb00b.com,,,,,,,,
+Homoglyph,xn--ovl-tee.com,,,,,,,,
+Homoglyph,xn--v-ztb69g.com,,,,,,,,
+Homoglyph,xn--h-0tb9n.com,,,,,,,,
+Homoglyph,ovllh.com,,,,,,,,
+Homoglyph,xn--o-omb89a.com,,,,,,,,
+Homoglyph,xn--oih-2kd.com,,,,,,,,
+Homoglyph,xn--ovi-qed.com,,,,,,,,
+Homoglyph,xn--h-nmb70g.com,,,,,,,,
+Homoglyph,xn--h-5wb92f.com,,,,,,,,
+Homoglyph,xn--v-rmb17e.com,,,,,,,,
+Homoglyph,xn--v-0tb09a.com,,,,,,,,
+Homoglyph,0vih.com,,,,,,,,
+Homoglyph,xn--vlh-2xd.com,,,,,,,,
+Homoglyph,xn--vih-0lz.com,,,,,,,,
+Homoglyph,xn--h-0tb9n.com,,,,,,,,
+Homoglyph,xn--vlh-4ge.com,,,,,,,,
+Homoglyph,xn--v-wya39m.com,,,,,,,,
+Homoglyph,ovlih.com,,,,,,,,
+Homoglyph,xn--v-rmb39a.com,,,,,,,,
+Homoglyph,xn--oh-rub77l.com,,,,,,,,
+Homoglyph,xn--vih-slz.com,,,,,,,,
+Homoglyph,ovih.com,209.200.154.51,,,dns1.name-services.com,United States,,,0
+Homoglyph,xn--o-omb714j.com,,,,,,,,
+Homoglyph,xn--v-60b041r.com,,,,,,,,
+Homoglyph,xn--vlh-8yc.com,,,,,,,,
+Homoglyph,xn--ovh-kua.com,,,,,,,,
+Homoglyph,xn--v-0bi581e.com,,,,,,,,
+Homoglyph,xn--vih-rna.com,,,,,,,,
+Homoglyph,xn--vlh-red.com,,,,,,,,
+Homoglyph,xn--ovh-iwa.com,,,,,,,,
+Homoglyph,xn--ovh-0ma.com,,,,,,,,
+Homoglyph,xn--vih-8yc.com,,,,,,,,
+Homoglyph,xn--v-0ga155l.com,,,,,,,,
+Homoglyph,xn--vh-rub84e.com,,,,,,,,
+Hyphenation,o-vh.com,,,,,,,,
+Hyphenation,ov-h.com,,,,,,,,
+Insertion,ofvh.com,159.8.40.54,,mail.efty.com,ns1.eftydns.com,Netherlands,,,0
+Insertion,ovgh.com,54.214.116.219,,,,United States,,,0
+Insertion,ogvh.com,184.168.221.104,,,ns1.afternic.com,United States,,,0
+Insertion,ovbh.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Insertion,ovfh.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Insertion,ocvh.com,66.135.61.8,,ocvh.com.1.0001.arsmtp.com,ns31.domaincontrol.com,United States,,,0
+Insertion,ovch.com,185.53.178.6,,mail.h-email.net,ns1.parkingcrew.net,Germany,,,0
+Insertion,obvh.com,185.202.174.11,,mail.obvh.com,ns1.obvh.com,,,,0
+Omission,vh.com,162.216.41.209,,vh.com,ns1.firehost.com,United States,,,0
+Omission,ov.com,50.63.202.26,,,ns67.domaincontrol.com,United States,,,0
+Omission,oh.com,69.172.201.153,,,ns1.uniregistrymarket.link,United States,,,0
+Repetition,ovvh.com,98.158.198.14,,mail.ovvh.com,ns.ovvh.com,United States,,,
+Repetition,oovh.com,185.239.51.75,,mail.oovh.com,ns51.domaincontrol.com,,,,
+Replacement,och.com,50.63.202.42,,mailstore1.secureserver.net,ns05.domaincontrol.com,United States,,,0
+Replacement,obh.com,75.126.100.23,,,ns1bqx.name.com,United States,,,0
+Replacement,ovu.com,75.126.75.71,,75.126.75.71,dns1.yandex.net,United States,,,
+Replacement,ovz.com,,,www.ovz.de,ns.she.de,,,,
+Replacement,ovn.com,208.73.210.202,,,ns1.dsredirection.com,United States,,,0
+Replacement,ovy.com,63.251.38.173,,mail.ovy.com,ns1.r9.net,United States,,,0
+Replacement,ivh.com,216.239.32.21,2001:4860:4802:32::15,alt1.aspmx.l.google.com,ns-cloud-c1.googledomains.com,United States,,,0
+Replacement,ovb.com,185.53.178.9,,mail.h-email.net,ns1.parkingcrew.net,Germany,,,0
+Replacement,ogh.com,209.61.212.114,,smtp.getontheweb.com,ns1.dnsnameservice.com,,,,
+Replacement,pvh.com,63.240.96.226,,mx1.pvh.iphmx.com,cbru.br.ns.els-gms.att.net,United States,,,0
+Replacement,0vh.com,75.126.101.245,,,ns1kpv.name.com,United States,,,0
+Replacement,9vh.com,,,,,,,,
+Replacement,lvh.com,192.234.106.140,,lvh-com.mail.protection.outlook.com,ns1.p29.dynect.net,United States,,,
+Replacement,ovg.com,162.241.230.119,,mail.ovg.com,ns1.bluehost.com,,,,
+Subdomain,o.vh.com,,,,,,,,
+Subdomain,ov.h.com,,,,,,,,
+Transposition,voh.com,91.195.240.240,,localhost,ns1.sedoparking.com,Germany,,,0
+Transposition,ohv.com,75.126.100.21,,,ns1bqx.name.com,United States,,,0
+Vowel-swap,evh.com,208.91.197.27,,p.webcom.ctmail.com,ns55.worldnic.com,United States,,,0
+Vowel-swap,avh.com,46.166.189.98,,,ns-canada.topdns.com,Netherlands,,,0
+Vowel-swap,uvh.com,75.126.100.17,,,ns1bqx.name.com,United States,,,0
+Various,ovhcom.com,23.20.239.12,,,,United States,,,0
