@@ -22,14 +22,10 @@ if not os.path.splitext(domain)[1] == ".com":
     exit()
 
 commande = 'curl -s -X GET "https://api.ote-godaddy.com/v1/domains/available?domain='+domain+'&checkType=FAST&forTransfer=false" -H "accept: application/json" -H "Authorization: sso-key 3mM44UZC2ozGTC_VEsj87nyR35LSegMkrVMJe:VEstF2GMNwi84FD7uydj82"'
-# commande = 'ls'
 
 p = os.popen(commande)
-while 1:
-    line = p.readline()
-    if not line: break
-    # print line
-    if 'available":false' in line:
-        print "Ce nom de domaine n'est PAS disponible"
-    else:
-        print "Ce nom de domaine est disponible à l'achat"
+line = p.readline()
+if 'available":false' in line:
+    print "Ce nom de domaine n'est PAS disponible"
+else:
+    print "Ce nom de domaine est disponible à l'achat"

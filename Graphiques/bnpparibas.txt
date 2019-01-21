@@ -1,0 +1,23 @@
+*** DNS_NS ***
+ns1.bnpparibas.com:7
+ns1.bdm.microsoftonline.com:2
+ns1.namebrightdns.com:2
+ns1.bnpparibus.com:1
+ns1.mytrafficmanagement.com:1
+sk.s5.cm.ns1.88.ztomy.com:1
+ns75.domaincontrol.com:1
+ns.123-reg.co.uk:1
+dns1.registrar-servers.com:1
+ns1.sedoparking.com:1
+ns25.worldnic.com:1
+
+*** GEOIP_COUNTRY ***
+United States:11
+France:5
+Virgin Islands:1
+Germany:1
+
+*** Liste des domains parking ***
+ns1.sedoparking.com
+sk.s5.cm.ns1.88.ztomy.com
+ns75.domaincontrol.com

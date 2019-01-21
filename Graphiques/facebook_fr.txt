@@ -1,0 +1,29 @@
+*** DNS_NS ***
+ns1.parkingcrew.net:15
+ns1.lovellsnames.org:3
+ns1.bodis.com:2
+ns1.domforce.com:2
+ns3.epik.com:2
+ns1.justhost.com:1
+ns1.gegidns.com:1
+dns13.ovh.net:1
+a.ns.facebook.com:1
+ns81.domaincontrol.com:1
+dns10.ovh.net:1
+ns1027.ui-dns.biz:1
+ns1.amenworld.com:1
+dns108.ovh.net:1
+ns1020.ui-dns.biz:1
+ns1.above.com:1
+ns5.lwsdns.com:1
+ns11.infomaniak.ch:1
+ns1.ascio.net:1
+dns14.ovh.net:1
+
+*** GEOIP_COUNTRY ***
+
+*** Liste des domains parking ***
+ns1.above.com
+ns1.parkingcrew.net
+ns1.bodis.com
+ns81.domaincontrol.com

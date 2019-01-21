@@ -1,0 +1,21 @@
+*** DNS_NS ***
+chenar.credit-agricole.fr:4
+ns1.parkingcrew.net:2
+ns-cloud-e1.googledomains.com:1
+nsmpro1.nordnet.com:1
+ns-cloud-a1.googledomains.com:1
+ns1.amenworld.com:1
+dns101.registrar-servers.com:1
+a1-241.akam.net:1
+ns-219-a.gandi.net:1
+
+*** GEOIP_COUNTRY ***
+France:4
+Netherlands:2
+United States:2
+Italy:1
+Germany:1
+Ireland:1
+
+*** Liste des domains parking ***
+ns1.parkingcrew.net

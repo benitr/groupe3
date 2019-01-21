@@ -25,6 +25,9 @@ data_geoip_country = []
 
 i = 0
 cpt = 0
+avancement =0
+
+output_file = open('output_file.txt','w')
 
 # Liste des nom de domain de parking
 # Source : https://www.securitee.org/files/parking-sensors_ndss2015.pdf
@@ -32,16 +35,13 @@ cpt = 0
 parking_domain = []
 parking_domain_found = []
 
+domain_dispo = []
+domain_not_dispo = []
+
 # Initialisation des fonctions
 def dictionnaire(dico, colonne):
     if dico.has_key(colonne) :
         dico[colonne] = int(dico.get(colonne))+1
-    elif colonne == "geoip-country" :
-        # on fait rien
-        a = 0
-    elif colonne == "dns-ns" :
-        # on fait rien
-        b = 0
     else :
         dico[colonne] = 1
     return dico
@@ -64,6 +64,15 @@ def parking(park_list, dico):
             if parking in dic:
                 parking_domain_found.append(dic)
 
+def godaddy(domain):
+    commande = 'curl -s -X GET "https://api.ote-godaddy.com/v1/domains/available?domain='+domain+'&checkType=FAST&forTransfer=false" -H "accept: application/json" -H "Authorization: sso-key 3mM44UZC2ozGTC_VEsj87nyR35LSegMkrVMJe:VEstF2GMNwi84FD7uydj82"'
+    p = os.popen(commande)
+    line = p.readline()
+    if 'available":false' in line:
+        domain_not_dispo.append(domain)
+    else:
+        domain_dispo.append(domain)
+
 print "Script python realise par le groupe 3"
 print "BENIT Romain"
 print "MALLET Maxime"
@@ -79,7 +88,10 @@ if len(sys.argv) < 2 :
     exit()
 
 # Gestion des arguments
-filename = sys.argv[1]
+
+if "--input" in sys.argv:
+    filename = sys.argv[sys.argv.index("--input")+1]
+
 fichier = "ParkingDomains.txt"
 if not os.path.isfile(filename):
     print "Erreur,'"+filename+"' n'est pas un fichier"
@@ -97,11 +109,16 @@ if not os.path.splitext(fichier)[1] == ".txt":
     print "Erreur, '"+fichier+"' n'est pas un fichier TXT"
     exit()
 
+if "--godaddy" in sys.argv:
+    print sys.argv.index("--godaddy")+1
+    print "Bravo"
+
 # Lecture du fichier contenant les domain
 with open(fichier, "r") as fichier:
     fichier_entier = fichier.read()
     parking_domain = fichier_entier.split("\n")
     parking_domain.remove("")
+    fichier.close()
 # print parking_domain
 
 # Lecture du fichier CSV
@@ -118,9 +135,14 @@ with open(filename) as f:
 			geoip_country = row[6]
 			ssdeep_score = row[7]
 
-            # Utilisation des disctionnaires pour les listes finales
-			dictionnaire(dico_dns_ns, dns_ns)
-			dictionnaire(dico_geoip_country, geoip_country)
+            # On enlève la 1ere ligne
+			if not fuzzer == "fuzzer":
+            	# Utilisation des disctionnaires pour les listes finales
+				dictionnaire(dico_dns_ns, dns_ns)
+				dictionnaire(dico_geoip_country, geoip_country)
+
+            	# Remplissage des listes pour les domaines disponibles
+				# godaddy(domain_name)
 
 	except csv.Error as e:
 		sys.exit('file {}, line {}: {}'.format(filename, reader.line_num, e))
@@ -128,6 +150,7 @@ with open(filename) as f:
 # Affichage des donnees extraites
 print ""
 print "*** DNS_NS ***"
+output_file.write("*** DNS_NS ***\n")
 for cle,valeur in trie(dico_dns_ns):
     	if i < 5:
     		name_dns_ns.append(cle)
@@ -136,6 +159,7 @@ for cle,valeur in trie(dico_dns_ns):
     		cpt = int(valeur)+cpt
     	i = i+1
     	print cle,valeur
+        output_file.write(cle+":"+str(valeur)+"\n")
 if cpt > 0:
     name_dns_ns.append("Autres")
     data_dns_ns.append(cpt)
@@ -144,6 +168,7 @@ i=0
 
 print ""
 print "*** GEOIP_COUNTRY ***"
+output_file.write("\n*** GEOIP_COUNTRY ***\n")
 for cle,valeur in trie(dico_geoip_country):
 	if i < 5:
 		name_geoip_country.append(cle)
@@ -152,6 +177,7 @@ for cle,valeur in trie(dico_geoip_country):
 		cpt = int(valeur)+cpt
 	i = i+1
 	print cle,valeur
+	output_file.write(cle+":"+str(valeur)+"\n")
 if cpt > 0:
     name_geoip_country.append("Autres")
     data_geoip_country.append(cpt)
@@ -160,15 +186,24 @@ if cpt > 0:
 # print dico_geoip_country
 
 # Gestion des domains parking
-
 parking(parking_domain,dico_dns_ns)
 print ""
 print "*** Liste des domains parking ***"
+output_file.write("\n*** Liste des domains parking ***\n")
 for park in parking_domain_found:
     print park
+    output_file.write(park+"\n")
+
+print domain_dispo
+print len(domain_dispo)
+
+print domain_not_dispo
+print len(domain_not_dispo)
+
+# Fermeture du fichier TXT
+output_file.close()
 
 # Traitement des donnees pour le graphique
-
 pyplot.figure(1)
 pyplot.subplot(1, 3, 1)
 plt.title("DNS NS")
@@ -179,7 +214,5 @@ pyplot.subplot(1, 3, 3)
 plt.title("GEOIP COUNTRY")
 plt.pie(data_geoip_country, labels=name_geoip_country, autopct=make_autopct(data_dns_ns),startangle=90, shadow=True)
 plt.axis('equal')
-
-plt.savefig('Test.png')
 
 plt.show()

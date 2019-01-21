@@ -1,0 +1,68 @@
+*** DNS_NS ***
+ns10.bac.com:57
+ns1.above.com:26
+ns1.bodis.com:20
+dns1.cscdns.net:19
+ns1.tacomadc.com:12
+ns1.redmonddc.com:9
+ns1.parkingcrew.net:9
+ns1.domainmx.com:8
+dns1.name-services.com:7
+ns1.rentondc.com:7
+ns1.hastydns.com:7
+ns1.uniregistry-dns.com:4
+ns1.ndsplitter.com:4
+ns1.monikerdns.net:4
+ns-cloud-e1.googledomains.com:3
+ns1.torresdns.com:3
+ns1.sedoparking.com:3
+ns-cloud-d1.googledomains.com:2
+ns1.dnslink.com:2
+ns1.smtmdns.com:2
+ns1.koaladns.com:2
+ns-cloud-c1.googledomains.com:2
+joel.ns.cloudflare.com:1
+f1g1ns1.dnspod.net:1
+ns1.uniregistrymarket.link:1
+sk.s7.ans1.ns147.klczy.com:1
+v1.dns234.net:1
+ns1.milesmx.com:1
+ns1.wombatdns.com:1
+ns-cloud-b1.googledomains.com:1
+ns3.above.com:1
+ns4.dnsauthority.com:1
+ns1.dsredirection.com:1
+ns1.renewyourname.net:1
+ns1.hostmonster.com:1
+dns010.d.register.com:1
+ns1.voodoo.com:1
+ns13.domaincontrol.com:1
+ns1219.ispapi.net:1
+ns1023.ui-dns.biz:1
+ns1.dreamhost.com:1
+ns1.parklogic.com:1
+ns01.cashparking.com:1
+1a7ea920.bitcoin-dns.hosting:1
+ns1.parkingspa.com:1
+
+*** GEOIP_COUNTRY ***
+United States:154
+Australia:27
+Germany:15
+Netherlands:9
+Virgin Islands:3
+United Kingdom:1
+Cayman Islands:1
+Lithuania:1
+China:1
+
+*** Liste des domains parking ***
+ns1.sedoparking.com
+ns01.cashparking.com
+ns1.dsredirection.com
+ns3.above.com
+ns1.above.com
+ns1.parkingcrew.net
+ns1.voodoo.com
+ns1.bodis.com
+ns13.domaincontrol.com

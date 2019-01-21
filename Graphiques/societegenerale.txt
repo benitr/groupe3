@@ -1,0 +1,16 @@
+*** DNS_NS ***
+tigdns01.socgen.com:15
+ns1.parkingcrew.net:11
+ns1.bodis.com:6
+ns1.sedoparking.com:2
+
+*** GEOIP_COUNTRY ***
+France:14
+Germany:11
+United States:8
+Netherlands:1
+
+*** Liste des domains parking ***
+ns1.sedoparking.com
+ns1.parkingcrew.net
+ns1.bodis.com
