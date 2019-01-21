@@ -1,0 +1,17 @@
+test d'un domaine par code sur Godaddy
+
+Remplacer le site facebook.com par le nom à tester
+curl -X GET "https://api.ote-godaddy.com/v1/domains/available?domain=facebook.com&checkType=FAST&forTransfer=false" -H "accept: application/json" -H "Authorization: sso-key 3mM44UZC2ozGTC_VEsj87nyR35LSegMkrVMJe:VEstF2GMNwi84FD7uydj82"
+
+Par exemple aggreger le texte suivant pour avoir la commande :
+curl -X GET "https://api.ote-godaddy.com/v1/domains/available?domain=
+xxxxxx.xxxx.xxx
+&checkType=FAST&forTransfer=false" -H "accept: application/json" -H "Authorization: sso-key 3mM44UZC2ozGTC_VEsj87nyR35LSegMkrVMJe:VEstF2GMNwi84FD7uydj82"
+
+les identifiants sont dans la 3eme ligne en fin de commande
+
+Détail du retour pour un nom de domain non libre
+{"available":false,"definitive":true,"domain":"facebook.com"}
+
+Détail du retour pour un nom de domain libre
+{"available":true,"currency":"USD","definitive":true,"domain":"trueack.com","period":1,"price":10690000}
