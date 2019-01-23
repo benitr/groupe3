@@ -4,6 +4,7 @@ ns1bqx.name.com:7
 ns1.afternic.com:3
 ns1.bodis.com:3
 ns1.sedoparking.com:2
+ns1.above.com:2
 ns1.parkingcrew.net:2
 ns65.domaincontrol.com:2
 ns67.domaincontrol.com:1
@@ -19,7 +20,6 @@ ns1.firehost.com:1
 christina.neostrada.nl:1
 ns1.a2hosting.com:1
 pdns03.domaincontrol.com:1
-ns1.above.com:1
 toglodo.earth.orderbox-dns.com:1
 ns1.dsredirection.com:1
 ns1.ovhr.com:1
@@ -46,9 +46,9 @@ dns1.name-services.com:1
 United States:49
 Germany:4
 Netherlands:3
+Australia:2
 Canada:1
 Singapore:1
-Australia:1
 United Kingdom:1
 Switzerland:1
 Norway:1
@@ -66,3 +66,47 @@ ns45.domaincontrol.com
 ns65.domaincontrol.com
 ns51.domaincontrol.com
 ns05.domaincontrol.com
+
+*** Correspondance entre registar en nom de domains ***
+ns67.domaincontrol.com: ov.com, 
+a.ns36.de: ovhb.com, 
+ns1bqx.name.com: ohv.com, nvh.com, orh.com, obh.com, ovl.com, oth.com, uvh.com, 
+ns1.uniregistrymarket.link: ovhg.com, ovhx.com, ovha.com, ovbh.com, oh.com, ovhv.com, ovfh.com, 
+ns95.worldnic.com: ovhd.com, 
+ns1.bluehost.com: ovg.com, 
+ns1.afternic.com: ovht.com, ovhf.com, ovhp.com, 
+ns55.worldnic.com: evh.com, 
+ns01.one.com: ovhk.com, 
+ns1kpv.name.com: 0vh.com, 
+ns1.p28.dynect.net: kvh.com, 
+cbru.br.ns.els-gms.att.net: pvh.com, 
+ns1.firehost.com: vh.com, 
+christina.neostrada.nl: ovhl.com, 
+ns1.sedoparking.com: voh.com, ovhe.com, 
+ns1.a2hosting.com: ofh.com, 
+pdns03.domaincontrol.com: owh.com, 
+ns1.above.com: ovhy.com, TEST.com, 
+ns1.parkingcrew.net: ovch.com, ovb.com, 
+toglodo.earth.orderbox-dns.com: ovhu.com, 
+ns1.dsredirection.com: ovn.com, 
+ns1.ovhr.com: ovhr.com, 
+ns1.dnsnameservice.com: ogh.com, 
+ns31.domaincontrol.com: ocvh.com, 
+ns.ovvh.com: ovvh.com, 
+ns1.namebrightdns.com: ovhj.com, 
+ns45.domaincontrol.com: ovhw.com, 
+ns1.r9.net: ovy.com, 
+ns1.p29.dynect.net: lvh.com, 
+ns.nokia.com: ovi.com, 
+ns.she.de: ovz.com, 
+dns.ovh.net: ovh.com, 
+ns65.domaincontrol.com: ovhs.com, ovhi.com, 
+ns1.obvh.com: obvh.com, 
+dns1.yandex.net: ovu.com, 
+ns51.domaincontrol.com: oovh.com, 
+ns05.domaincontrol.com: och.com, 
+ns1.eftydns.com: ovhn.com, 
+ns-canada.topdns.com: avh.com, 
+ns-cloud-c1.googledomains.com: ivh.com, 
+ns1.bodis.com: ovhz.com, ovx.com, 
+dns1.name-services.com: ovih.com, 

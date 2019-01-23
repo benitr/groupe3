@@ -4,7 +4,7 @@
 #############################
 #		Script python		#
 #		BENIT Romain		#
-#		Version 1.3			#
+#		Version 1.4			#
 #############################
 
 # Import des modules
@@ -22,6 +22,8 @@ data_dns_ns = []
 dico_geoip_country = {}
 name_geoip_country = []
 data_geoip_country = []
+
+dico_domains = {}
 
 i = 0
 cpt = 0
@@ -50,6 +52,11 @@ def trie(dico):
      del dico[""]
      dico_trie = sorted(dico.iteritems(), reverse=True, key=operator.itemgetter(1))
      return dico_trie
+
+def dicodomains(dico, domain_name, dns_ns):
+    if not dns_ns == "" :
+        dico[domain_name] = dns_ns
+    return dico
 
 def make_autopct(values):
     def my_autopct(pct):
@@ -140,6 +147,7 @@ with open(filename) as f:
             	# Utilisation des disctionnaires pour les listes finales
 				dictionnaire(dico_dns_ns, dns_ns)
 				dictionnaire(dico_geoip_country, geoip_country)
+				dicodomains(dico_domains, domain_name, dns_ns)
 
             	# Remplissage des listes pour les domaines disponibles
 				if "--godaddy" in sys.argv:
@@ -221,6 +229,25 @@ if "--godaddy" in sys.argv:
 
 #print domain_not_dispo
 #print len(domain_not_dispo)
+
+print ""
+print "*** Correspondance entre registar en nom de domains ***"
+output_file.write("\n*** Correspondance entre registar en nom de domains ***\n")
+list_values = dico_domains.values()
+list_keys = dico_domains.keys()
+
+for cle in dico_dns_ns :
+    print cle," : ",
+    output_file.write(cle+": ")
+    for val in list_values:
+        if cle == val:
+            ind = list_values.index(cle)
+            print list_keys[ind],
+            output_file.write(list_keys[ind]+", ")
+            del list_values[ind]
+            del list_keys[ind]
+    print ""
+    output_file.write("\n")
 
 # Fermeture du fichier TXT
 output_file.close()
