@@ -116,10 +116,6 @@ if not os.path.splitext(fichier)[1] == ".txt":
     print "Erreur, '"+fichier+"' n'est pas un fichier TXT"
     exit()
 
-#if "--godaddy" in sys.argv:
-#    print sys.argv.index("--godaddy")+1
-#    print "Bravo"
-
 # Lecture du fichier contenant les domain
 with open(fichier, "r") as fichier:
     fichier_entier = fichier.read()
@@ -231,7 +227,7 @@ if "--godaddy" in sys.argv:
 #print len(domain_not_dispo)
 
 print ""
-print "*** Correspondance entre registar en nom de domains ***"
+print "*** Correspondance entre registar en noms de domain ***"
 output_file.write("\n*** Correspondance entre registar en nom de domains ***\n")
 list_values = dico_domains.values()
 list_keys = dico_domains.keys()
