@@ -13,6 +13,7 @@ from pylab import *
 from matplotlib import pyplot
 import operator
 import os
+import pylab
 
 # Initialisation des variables
 dico_dns_ns = {}
@@ -26,6 +27,8 @@ data_geoip_country = []
 dico_domains = {}
 
 i = 0
+lignes_totales = 0
+lignes_dns = 0
 cpt = 0
 avancement =0
 
@@ -149,6 +152,8 @@ with open(filename) as f:
 				if "--godaddy" in sys.argv:
 					godaddy(domain_name)
 
+			lignes_totales = lignes_totales+1
+
 	except csv.Error as e:
 		sys.exit('file {}, line {}: {}'.format(filename, reader.line_num, e))
 
@@ -245,6 +250,11 @@ for cle in dico_dns_ns :
     print ""
     output_file.write("\n")
 
+for valeur_dns in dico_dns_ns.values():
+    lignes_dns = lignes_dns+valeur_dns
+
+print str(lignes_dns)+"/"+str(lignes_totales)
+
 # Fermeture du fichier TXT
 output_file.close()
 
@@ -254,8 +264,8 @@ pyplot.subplot(1, 3, 1)
 plt.title("DNS NS")
 plt.pie(data_dns_ns, labels=name_dns_ns, autopct=make_autopct(data_dns_ns), startangle=90, shadow=True)
 plt.axis('equal')
-pyplot.subplot(1, 3, 3)
 
+pyplot.subplot(1, 3, 3)
 plt.title("GEOIP COUNTRY")
 plt.pie(data_geoip_country, labels=name_geoip_country, autopct=make_autopct(data_dns_ns),startangle=90, shadow=True)
 plt.axis('equal')

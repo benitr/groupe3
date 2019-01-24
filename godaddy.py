@@ -26,6 +26,6 @@ commande = 'curl -s -X GET "https://api.ote-godaddy.com/v1/domains/available?dom
 p = os.popen(commande)
 line = p.readline()
 if 'available":false' in line:
-    print "Ce nom de domaine n'est PAS disponible"
+    print "Ce nom de domaine n'est PAS disponible à l'achat"
 else:
     print "Ce nom de domaine est disponible à l'achat"
