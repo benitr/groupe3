@@ -1,60 +1,73 @@
 *** DNS_NS ***
-ns10.bac.com:57
-ns1.above.com:26
-ns1.bodis.com:20
-dns1.cscdns.net:19
-ns1.tacomadc.com:12
-ns1.redmonddc.com:9
-ns1.parkingcrew.net:9
-ns1.domainmx.com:8
-dns1.name-services.com:7
-ns1.rentondc.com:7
-ns1.hastydns.com:7
-ns1.uniregistry-dns.com:4
-ns1.ndsplitter.com:4
-ns1.monikerdns.net:4
-ns-cloud-e1.googledomains.com:3
-ns1.torresdns.com:3
-ns1.sedoparking.com:3
-ns-cloud-d1.googledomains.com:2
-ns1.dnslink.com:2
-ns1.smtmdns.com:2
-ns1.koaladns.com:2
-ns-cloud-c1.googledomains.com:2
-joel.ns.cloudflare.com:1
-f1g1ns1.dnspod.net:1
-ns1.uniregistrymarket.link:1
-sk.s7.ans1.ns147.klczy.com:1
-v1.dns234.net:1
-ns1.milesmx.com:1
-ns1.wombatdns.com:1
-ns-cloud-b1.googledomains.com:1
+ns1.above.com:14
+ns1.markmonitor.com:14
+ns1.rentondc.com:11
+ns1.sedoparking.com:7
+ns1.bodis.com:5
+ns1.parkingcrew.net:4
+ns1.domainmx.com:4
+ns1.parklogic.com:4
+ns1.redmonddc.com:3
+ns-cloud-d1.googledomains.com:3
+ns1.myhostadmin.net:3
+dns1.name-services.com:3
+dns101.registrar-servers.com:2
+ns1.hastydns.com:2
+ns1.uniregistrymarket.link:2
+ns1.dsredirection.com:2
+ns1.torresdns.com:2
+a.ns36.de:1
+ns1.undeveloped.com:1
+ns11.domaincontrol.com:1
+ns-cloud-a1.googledomains.com:1
+ns29.domaincontrol.com:1
+ns1.quokkadns.com:1
+ns1.p57.dynect.net:1
+NS1.DOMAIN-IS-4-SALE-AT-DOMAINMARKET.com:1
+ns1.afternic.com:1
+ns1vwx.name.com:1
+ns1.dnslink.com:1
+ns3.dns.com:1
+ns1.dynadot.com:1
+ns1.smtmdns.com:1
+ns1.monikerdns.net:1
+ns1.koaladns.com:1
+ns3.afternic.com:1
 ns3.above.com:1
-ns4.dnsauthority.com:1
-ns1.dsredirection.com:1
-ns1.renewyourname.net:1
-ns1.hostmonster.com:1
+ns1.domaindiscover.com:1
+dns1.bigrock.com:1
+jm1.dns.com:1
+ns1.pql.net:1
+ns6.dnsdun.com:1
+ns73.domaincontrol.com:1
+ns1.opensrsdns.com:1
+ns1.mydomain.com:1
+ns17.domaincontrol.com:1
+ns1.namebrightdns.com:1
 dns010.d.register.com:1
-ns1.voodoo.com:1
-ns13.domaincontrol.com:1
-ns1219.ispapi.net:1
-ns1023.ui-dns.biz:1
-ns1.dreamhost.com:1
-ns1.parklogic.com:1
+ns09.domaincontrol.com:1
+ns-1212.awsdns-23.org:1
+ns55.domaincontrol.com:1
+ns19.domaincontrol.com:1
+ns2.dnsdun.com:1
+ns63.domaincontrol.com:1
+ns-cloud-e1.googledomains.com:1
+ns2.vpweb.com:1
+ns-canada.topdns.com:1
+failed-whois-verification.namecheap.com:1
 ns01.cashparking.com:1
-1a7ea920.bitcoin-dns.hosting:1
-ns1.parkingspa.com:1
+ns75.worldnic.com:1
+ns27.domaincontrol.com:1
 
 *** GEOIP_COUNTRY ***
-United States:154
-Australia:27
-Germany:15
-Netherlands:9
-Virgin Islands:3
-United Kingdom:1
-Cayman Islands:1
-Lithuania:1
-China:1
+United States:88
+Australia:15
+Germany:8
+Netherlands:5
+Lithuania:4
+Canada:1
+Virgin Islands:1
+Hong Kong:1
 
 *** Liste des domaines parking ***
 ns1.sedoparking.com
@@ -63,53 +76,75 @@ ns1.dsredirection.com
 ns3.above.com
 ns1.above.com
 ns1.parkingcrew.net
-ns1.voodoo.com
 ns1.bodis.com
-ns13.domaincontrol.com
+ns1.pql.net
+ns11.domaincontrol.com
+ns29.domaincontrol.com
+ns73.domaincontrol.com
+ns17.domaincontrol.com
+ns09.domaincontrol.com
+ns55.domaincontrol.com
+ns19.domaincontrol.com
+ns63.domaincontrol.com
+ns27.domaincontrol.com
 
 *** Correspondance entre registar en nom de domains ***
-joel.ns.cloudflare.com: bank0famerlca.com, 
-ns-cloud-d1.googledomains.com: xn--bnkofameric-76ak.com, xn--bnkofmerica-76ae.com, 
-f1g1ns1.dnspod.net: bankofameryca.com, 
-ns1.uniregistrymarket.link: bankofame.rica.com, 
-sk.s7.ans1.ns147.klczy.com: bankofame4rica.com, 
-dns1.name-services.com: banmkofamerica.com, basnkofamerica.com, bankofamericva.com, bankofameriuca.com, bsankofamerica.com, bankogfamerica.com, bankofamerivca.com, 
-ns1.rentondc.com: bankofameruica.com, bankpofamerica.com, bajkofamerica.com, bankjofamerica.com, bankofameeica.com, bankofemerica.com, bankofasmerica.com, 
-v1.dns234.net: bankofalmerica.com, 
-ns1.dnslink.com: bnakofamerica.com, baokofamerica.com, 
-ns1.redmonddc.com: bakofamerica.com, banklfamerica.com, bankofwmerica.com, bannkofamerica.com, bankofamericw.com, baniofamerica.com, bahkofamerica.com, hankofamerica.com, gankofamerica.com, 
-ns1.milesmx.com: bonkofamerica.com, 
-ns1.smtmdns.com: bankofamericc.com, bankofaqmerica.com, 
-ns1.wombatdns.com: bqnkofamerica.com, 
-ns1.koaladns.com: bankofameraca.com, bankofamdrica.com, 
-ns-cloud-b1.googledomains.com: bankofamericat.com, 
-ns3.above.com: ba.nkofamerica.com, 
-ns4.dnsauthority.com: bankofarmerica.com, 
-ns10.bac.com: bankofamerican.com, bankofameriac.com, ankofamerica.com, baankofamerica.com, bankocamerica.com, bankofmaerica.com, bankoffamerica.com, bankkofamerica.com, bankfoamerica.com, bbankofamerica.com, bankofmerica.com, bankofamerixa.com, bankofameriva.com, bankogamerica.com, bankofamereica.com, bankodamerica.com, bankoofamerica.com, bnkofamerica.com, bankofamreica.com, banklofamerica.com, bankofameroca.com, bankofamericca.com, abnkofamerica.com, banbkofamerica.com, bankofamerida.com, bankofqamerica.com, bankofamerica.com, bankofamercia.com, bankofameica.com, bankfamerica.com, bankofsamerica.com, bankofamerca.com, bankofaerica.com, bankofameruca.com, bankofajerica.com, bankofaamerica.com, bankifamerica.com, bankofameerica.com, bankofameric.com, bankofamerics.com, bank0famerica.com, bankofamericq.com, bankpfamerica.com, 
-ns1.bodis.com: banko9famerica.com, bankodfamerica.com, baknofamerica.com, bankofamericaq.com, bankofamedica.com, bankofamwerica.com, banjofamerica.com, bankofam4erica.com, baqnkofamerica.com, bankofamerifca.com, bankofanmerica.com, bankofamericam.com, bankoframerica.com, bankofamerixca.com, bankafamerica.com, bankofamericxa.com, bankofamnerica.com, vankofamerica.com, bwnkofamerica.com, 
-ns1.above.com: bankofamerfica.com, bankofamerjca.com, bankofamericac.com, bankofammerica.com, bankofamerikca.com, bankofamsrica.com, bankofdamerica.com, babkofamerica.com, bankofamericda.com, bankofamerisa.com, bankofameriga.com, bankofzmerica.com, bankofamericfa.com, bankofameri-ca.com, bankofamerkca.com, bankofamefica.com, bankofamericao.com, banmofamerica.com, bankofamerifa.com, bankofameriaa.com, banko0famerica.com, bank-ofamerica.com, 
-ns1.parkingcrew.net: bankofamserica.com, banokofamerica.com, bankiofamerica.com, bankofsmerica.com, bankofamerkica.com, bznkofamerica.com, banhkofamerica.com, bankoafmerica.com, nankofamerica.com, 
-ns1.dsredirection.com: bankofomerica.com, 
-ns1.domainmx.com: bankofakerica.com, bankotamerica.com, bsnkofamerica.com, bankofgamerica.com, banoofamerica.com, benkofamerica.com, bankorfamerica.com, 
-ns1.hastydns.com: bankofamedrica.com, bankofarerica.com, ibankofamerica.com, cankofamerica.com, bankofamarica.com, 
-ns1.renewyourname.net: b-ankofamerica.com, 
-ns1.hostmonster.com: xn--bnkofmeric-q5aef.com, 
-dns010.d.register.com: bankonamerica.com, 
-ns1.uniregistry-dns.com: bankofanerica.com, banlofamerica.com, bankofamericz.com, 
-ns1.ndsplitter.com: bajnkofamerica.com, bankofamirica.com, bankofawmerica.com, bankofwamerica.com, 
-ns1.tacomadc.com: byankofamerica.com, bankofaperica.com, bankofameri8ca.com, bankofamlerica.com, bank9famerica.com, bankofamericad.com, bankofamefrica.com, bankofamericav.com, bankofcmerica.com, bankofamerhca.com, bankofalerica.com, bankofamericae.com, 
-ns1.voodoo.com: bank0ofamerica.com, 
-ns13.domaincontrol.com: bankofamesrica.com, 
-ns1.monikerdns.net: bankolfamerica.com, bankofakmerica.com, bankofamderica.com, bankokfamerica.com, 
-ns1219.ispapi.net: babnkofamerica.com, 
-ns1023.ui-dns.biz: rankofamerica.com, 
-ns-cloud-e1.googledomains.com: xn--bnkofameric-k7ak.com, xn--bnkofmeric-h4aef.com, xn--bankofmeric-p7af.com, 
-ns1.torresdns.com: banlkofamerica.com, bankoifamerica.com, 
-ns1.dreamhost.com: bunkofamerica.com, 
-ns1.parklogic.com: bankofamrrica.com, 
-ns-cloud-c1.googledomains.com: xn--bankofmeric-d7af.com, xn--bnkofmerica-k7ae.com, 
-ns1.sedoparking.com: bankofamertica.com, bankofameridca.com, bankkfamerica.com, 
-ns01.cashparking.com: bankofame3rica.com, 
-dns1.cscdns.net: bankofamereca.com, bankof-america.com, bankofamericar.com, xn--bnkofmeric-ggeef.com, ban-kofamerica.com, bankofamerical.com, bankofamerice.com, bankovamerica.com, lbankofamerica.com, bankofamerika.com, bankofamericak.com, bankofamrerica.com, 
-1a7ea920.bitcoin-dns.hosting: banknfamerica.com, 
-ns1.parkingspa.com: bankofam.erica.com, 
+a.ns36.de: xn--pypl-5nac.com, 
+ns1.undeveloped.com: paypalh.com, 
+ns11.domaincontrol.com: paypala.com, 
+ns-cloud-a1.googledomains.com: xn--aya-ooac32b.com, 
+ns29.domaincontrol.com: xn--ayal-ukbc.com, 
+ns1.quokkadns.com: papyal.com, 
+ns1.p57.dynect.net: paypal.com, 
+NS1.DOMAIN-IS-4-SALE-AT-DOMAINMARKET.com: paypah.com, 
+dns101.registrar-servers.com: paypa1l.com, payxpal.com, 
+ns1.hastydns.com: paytal.com, paygpal.com, 
+ns1.afternic.com: paypali.com, 
+ns1vwx.name.com: paypalw.com, 
+ns1.rentondc.com: pagpal.com, paqypal.com, payoal.com, paypql.com, peypal.com, pwypal.com, paypaql.com, apypal.com, paylal.com, paypasl.com, 
+ns1.dnslink.com: pazypal.com, 
+ns1.redmonddc.com: pay0al.com, paypayl.com, 0aypal.com, 
+ns3.dns.com: paylpal.com, 
+ns-cloud-d1.googledomains.com: xn--aypa-9ra62b.com, xn--pypl-loac.com, xn--pyal-qoa5m.com, 
+ns1.dynadot.com: paypalc.com, 
+ns1.smtmdns.com: payapl.com, 
+ns1.monikerdns.net: poypal.com, 
+ns1.koaladns.com: paypwl.com, 
+ns3.afternic.com: raypal.com, 
+ns3.above.com: payp-al.com, 
+ns1.domaindiscover.com: paypad.com, 
+dns1.bigrock.com: paypale.com, 
+jm1.dns.com: paypalu.com, 
+ns1.pql.net: p-aypal.com, 
+ns6.dnsdun.com: pyypal.com, 
+ns73.domaincontrol.com: paypalp.com, 
+ns1.sedoparking.com: xn--pypl-q5bc.com, paypalm.com, pzypal.com, paypil.com, pyapal.com, psypal.com, 
+ns1.myhostadmin.net: puypal.com, paypcl.com, qaypal.com, 
+ns1.above.com: paupal.com, paypak.com, pa-ypal.com, paypap.com, pasypal.com, pahypal.com, payplal.com, paypsal.com, payp0al.com, oaypal.com, paypalo.com, paytpal.com, 
+ns1.opensrsdns.com: laypal.com, 
+ns1.parkingcrew.net: paxpal.com, psaypal.com, paypalt.com, pzaypal.com, 
+ns1.mydomain.com: pqypal.com, 
+ns1.domainmx.com: paypel.com, payopal.com, paypalk.com, patpal.com, 
+ns17.domaincontrol.com: paypalj.com, 
+ns1.namebrightdns.com: payspal.com, 
+dns010.d.register.com: pay-pal.com, 
+ns1.uniregistrymarket.link: papal.com, pa.ypal.com, 
+ns09.domaincontrol.com: xn--pypl-boac.com, 
+ns-1212.awsdns-23.org: pay7pal.com, 
+ns55.domaincontrol.com: paypam.com, 
+ns19.domaincontrol.com: paypalz.com, 
+ns2.dnsdun.com: pa7pal.com, 
+ns63.domaincontrol.com: xn--paypa-8nc.com, 
+ns-cloud-e1.googledomains.com: xn--ypal-poa3m.com, 
+ns2.vpweb.com: paqpal.com, 
+dns1.name-services.com: paypl.com, paypsl.com, paypla.com, 
+ns-canada.topdns.com: aypal.com, 
+ns1.parklogic.com: pyaypal.com, payapal.com, payupal.com, 
+failed-whois-verification.namecheap.com: xn--pypi-q5bc.com, 
+ns1.bodis.com: paypol.com, paypao.com, pa6pal.com, piypal.com, payral.com, 
+ns01.cashparking.com: pagypal.com, 
+ns75.worldnic.com: paypan.com, 
+ns1.dsredirection.com: payhpal.com, payal.com, 
+ns1.torresdns.com: paypul.com, paypyl.com, 
+ns27.domaincontrol.com: xn--pypl-szb1584b.com, 
+ns1.markmonitor.com: paipal.com, paypaal.com, paypaly.com, ppaypal.com, pahpal.com, payppal.com, paypyal.com, payypal.com, 

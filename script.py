@@ -36,7 +36,6 @@ output_file = open('output_file.txt','w')
 
 # Liste des nom de domain de parking
 # Source : https://www.securitee.org/files/parking-sensors_ndss2015.pdf
-# parking_domain = ["sedoparking.com", "internettraffic.com", "cashparking.com", "fabulous.com", "dsredirection.com", "above.com", "parkingcrew.net", "ztomy.com", "fastpark.net", "voodoo.com", "rookdns.com", "bodis.com", "domainapps.com", "trafficz.com", "pql.net", "domaincontrol.com" ]
 parking_domain = []
 parking_domain_found = []
 
